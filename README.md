@@ -1,4 +1,4 @@
-# simon game
+# Simon Game
 
 ## Description
 
@@ -19,10 +19,6 @@ There are no special installation instructions. The app runs in the web browser 
 
 User Stories:
 The player presses the start game button. A start game tone is played. The computer clicks one of four colored lights. The player mimics the action by clicking the same light. The turn counter above increases by 1. The computer clicks the light again but this time adds one more to the sequence. If the player mimics the sequence correctly, the turn counter is increased by one until reaching the last level. After beating the last level, a win game tone is played, the display reads “You Win”, and the lights flash randomly until the player presses the reset button.
-
-**Below is my sketch of the webpage layout**
-
-![webpage layout](images/simon-sketch.png)
 
 ## Major Hurdles Overcame
 
