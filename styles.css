@@ -91,7 +91,6 @@ main {
 }
 #bottomLeft:active {
 	border: 8px solid rgb(201, 174, 174);
-
 	background-color: lightyellow;
 }
 

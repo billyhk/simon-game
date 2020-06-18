@@ -229,12 +229,12 @@ function checkCorrect() {
 
 //if you pass all turns of the game, the clicks are no longer pushed to an array (off position) and the display reads "win"
 function winGame() {
-	setTimeout(playWinGameSound, 800);
+	// setTimeout(playWinGameSound, 800);
 
 	//the player can no longer interact with the game board and lights endlessly flash in a random order
 	on = false;
 
-	intervalId = setInterval(flashAllLightsRandomly, 200);
+	intervalId = setInterval(flashAllLightsRandomly, 600);
 	turnCounter.innerHTML = 'CONGRATULATIONS! YOU WIN!';
 
 	function flashAllLightsRandomly() {
@@ -242,26 +242,27 @@ function winGame() {
 		for (let i = 0; i < 20; i++) {
 			winSequence.push(Math.floor(Math.random() * 4) + 1);
 			if (winSequence[i] == 1) {
-				clickTopLeftMuted();
+				clickTopLeft();
 				topRight.style.background = 'red';
 				bottomRight.style.background = 'blue';
 				bottomLeft.style.background = 'yellow';
 			} else if (winSequence[i] == 2) {
-				clickTopRightMuted();
+				clickTopRight();
 				topLeft.style.background = 'green';
 				bottomRight.style.background = 'blue';
 				bottomLeft.style.background = 'yellow';
 			} else if (winSequence[i] == 3) {
-				clickBottomRightMuted();
+				clickBottomRight();
 				topLeft.style.background = 'green';
 				topRight.style.background = 'red';
 				bottomLeft.style.background = 'yellow';
 			} else if (winSequence[i] == 4) {
-				clickBottomLeftMuted();
+				clickBottomLeft();
 				topLeft.style.background = 'green';
 				topRight.style.background = 'red';
 				bottomRight.style.background = 'blue';
 			}
+			console.log(winSequence);
 		}
 	}
 }
