@@ -4,7 +4,7 @@
 
 This project is focused on developing a memory game in which a player competes with an automated engine. It is based on a handheld electronic game call [Simon](https://en.wikipedia.org/wiki/Simon_(game)).
 
-## Click [here](https://billyhk.github.io/) to play.
+## Click [here](https://simon-game-2020.herokuapp.com/) to play.
 
 **Below is a screen shot of the win game sequence**
 ![simon win game sequence](images/simon-win-game-screenshot.png)
